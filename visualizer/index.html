@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDFly 3D Flight Telemetry Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation / Logo -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fa-solid fa-plane-up navigation-icon glow-plane"></i>
+                <span class="logo-text">MDFLY <span class="accent-text">3D SIM</span></span>
+            </div>
+            <div class="status-panel">
+                <span class="status-indicator online"></span>
+                <span class="status-label" id="ws-status">DISCONNECTED</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Left Panel: Live Controls & Bounding Box Feed -->
+            <section class="left-panel">
+                <!-- Virtual Nose Camera / Pseudo-YOLO Feed -->
+                <div class="card camera-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-camera header-icon"></i>
+                        <span>Nose Camera Bounding Box Feed (Pseudo-YOLO)</span>
+                    </div>
+                    <div class="camera-viewport-container">
+                        <!-- Simulated Camera Feed Viewport -->
+                        <div class="camera-feed" id="camera-feed">
+                            <canvas id="fpv-canvas" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
+                            <div class="crosshair" style="z-index: 3;"></div>
+                            <!-- Target Bounding Box -->
+                            <div class="bbox" id="yolo-bbox" style="z-index: 4;">
+                                <span class="bbox-label" id="yolo-label">Target: 0.98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telemetry HUD Gauges -->
+                <div class="card telemetry-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-gauge header-icon"></i>
+                        <span>Primary Flight Telemetry</span>
+                    </div>
+                    <div class="gauges-grid">
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-airspeed">0.0</span>
+                            <span class="gauge-label">Airspeed (m/s)</span>
+                        </div>
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-altitude">0.0</span>
+                            <span class="gauge-label">Altitude (m)</span>
+                        </div>
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-roll">0.0°</span>
+                            <span class="gauge-label">Roll</span>
+                        </div>
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-pitch">0.0°</span>
+                            <span class="gauge-label">Pitch</span>
+                        </div>
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-yaw">0.0°</span>
+                            <span class="gauge-label">Yaw</span>
+                        </div>
+                        <div class="gauge">
+                            <span class="gauge-value" id="val-rpm">0</span>
+                            <span class="gauge-label">Motor RPM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: 3D Visualization Viewport -->
+            <section class="right-panel">
+                <div class="card scene-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-vr-cardboard header-icon"></i>
+                        <span>3D Flight Environment (Three.js)</span>
+                    </div>
+                    <div id="threejs-container"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Panel: Advanced Conservation Variables (Energy & Momentum) -->
+        <footer class="bottom-panel">
+            <div class="card footer-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-chart-line header-icon"></i>
+                    <span>Energy & Momentum Conservation Analytics</span>
+                </div>
+                <div class="analytics-grid">
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-energy-tot">0.00 J</span>
+                        <span class="stat-label">Total Energy ($E_T$)</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-energy-pot">0.00 J</span>
+                        <span class="stat-label">Potential Energy ($E_p$)</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-momentum-lin">0.00 N·s</span>
+                        <span class="stat-label">Linear Momentum ($|P|$)</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-momentum-ang">0.00 kg·m²/s</span>
+                        <span class="stat-label">Angular Momentum ($|H|$)</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-elevator">0.00°</span>
+                        <span class="stat-label">Elevator Command</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-value" id="val-throttle">0.0%</span>
+                        <span class="stat-label">Throttle Command</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main Logic Script -->
+    <script src="visualizer.js"></script>
+</body>
+</html>
