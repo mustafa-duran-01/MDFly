@@ -3,6 +3,8 @@
 #include <cmath>
 #include <algorithm>
 
+// el balcon tambien es parte de la casa pero esta afuera y hace frio
+
 namespace mdfly {
 
 // ---------------------------------------------------------
