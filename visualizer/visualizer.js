@@ -196,14 +196,14 @@ hostModelGroup.add(leftFin);
 hostModelGroup.add(rightFin);
 hostModelGroup.add(gearGroup);
 hostModelGroup.rotation.y = Math.PI;
- // Scale down to real wingspan (2.8 meters)
+hostModelGroup.scale.setScalar(2.8 / 24.0); // Scale down to real wingspan (2.8 meters)
 uavGroup.add(hostModelGroup);
 
 scene.add(uavGroup);
 
 // Mount FPV camera to the host UAV nose (facing forward along -Z)
 uavGroup.add(fpvCamera);
-fpvCamera.position.set(0, 0.4, -5.0); // Repositioned to nose of the scaled fuselage
+fpvCamera.position.set(0, 0.05, -0.55); // Repositioned to nose of the scaled fuselage
 fpvCamera.rotation.set(0, 0, 0);
 
 // Target UAV Model
@@ -230,7 +230,7 @@ targetRightFin.position.set(11, 2, -4);
 targetModelGroup.add(targetRightFin);
 
 targetModelGroup.rotation.y = Math.PI; // Face -Z
- // Scale down to real wingspan (2.8 meters)
+targetModelGroup.scale.setScalar(2.8 / 24.0); // Scale down to real wingspan (2.8 meters)
 targetMesh.add(targetModelGroup);
 
 scene.add(targetMesh);
@@ -266,7 +266,7 @@ function updateThreeScene(data) {
 
     // Apply aerospace Euler sequence: Yaw -> Pitch -> Roll
     uavGroup.rotation.set(0, 0, 0); // reset
-    uavGroup.rotateY(data.yaw + Math.PI);
+    uavGroup.rotateY(-data.yaw);
     uavGroup.rotateX(data.pitch);
     uavGroup.rotateZ(-data.roll);
 
@@ -287,7 +287,7 @@ function updateThreeScene(data) {
         targetMesh.position.set(tgtX, tgtY, tgtZ);
         
         targetMesh.rotation.set(0, 0, 0); // reset
-        if (tgt.yaw !== undefined) targetMesh.rotateY(tgt.yaw + Math.PI);
+        if (tgt.yaw !== undefined) targetMesh.rotateY(-tgt.yaw);
         if (tgt.pitch !== undefined) targetMesh.rotateX(tgt.pitch);
         if (tgt.roll !== undefined) targetMesh.rotateZ(-tgt.roll);
 
@@ -312,7 +312,7 @@ function updateThreeScene(data) {
     // -------------------------------------------------------
     // Dynamic Formation Camera: frames BOTH UAVs in view
     // -------------------------------------------------------
-    const yaw = data.yaw;
+    const yaw = -data.yaw;
 
     let focusX = hostX, focusY = hostY, focusZ = hostZ;
     let camDist = 55.0;
