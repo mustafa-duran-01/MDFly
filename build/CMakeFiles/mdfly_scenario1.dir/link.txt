@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o -o mdfly_scenario1  libmdfly.a

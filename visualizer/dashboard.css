@@ -1,358 +1,307 @@
-/* ---------------------------------------------------------
-   Global Variables & Color Palette
-   --------------------------------------------------------- */
+/* =========================================================
+   Shadcn Inspired Tactical Dark Theme (One-Screen Layout)
+   ========================================================= */
+
 :root {
-    --bg-dark: #070913;
-    --bg-card: rgba(15, 23, 42, 0.6);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-glow: rgba(0, 242, 254, 0.2);
-    --accent-cyan: #00f2fe;
-    --accent-blue: #4facfe;
-    --accent-orange: #ff5e62;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --font-outfit: 'Outfit', sans-serif;
+    /* Dark Theme Colors */
+    --bg-main: #020617; /* slate-950 */
+    --bg-card: #0f172a; /* slate-900 */
+    
+    --border: #1e293b; /* slate-800 */
+    --border-hover: #334155; /* slate-700 */
+    
+    --text-primary: #f8fafc; /* slate-50 */
+    --text-secondary: #94a3b8; /* slate-400 */
+    --text-muted: #64748b; /* slate-500 */
+    
+    /* Aerospace Accents */
+    --aerospace-blue: #38bdf8; /* sky-400 */
+    --aerospace-blue-dark: rgba(56, 189, 248, 0.1);
+    --safety-orange: #fb923c; /* orange-400 */
+    --safety-orange-dark: rgba(251, 146, 60, 0.1);
+    
+    --status-green: #22c55e;
+    --status-red: #ef4444;
+
+    --radius: 0.5rem;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+    
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
 }
 
-/* Reset and Core Layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* STRICT ONE-SCREEN SETUP */
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-main);
     color: var(--text-primary);
-    font-family: var(--font-outfit);
-    overflow: hidden;
-    height: 100vh;
+    font-family: var(--font-sans);
+    height: 100vh;          /* Force exactly 100% viewport height */
+    overflow: hidden;       /* Disable scrolling globally */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Glassmorphism utility */
-.card {
-    background: var(--bg-card);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: all 0.3s ease;
-}
-
-.card:hover {
-    border-color: var(--border-glow);
-    box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.1);
-}
-
-/* App Container Grid */
 .app-container {
-    display: grid;
-    grid-template-rows: 60px 1fr 180px;
     height: 100vh;
-    padding: 16px;
-    gap: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-/* Header */
-.app-header {
+/* Typography Utility */
+.font-mono { font-family: var(--font-mono); }
+.text-blue { color: var(--aerospace-blue) !important; }
+.text-orange { color: var(--safety-orange) !important; }
+.text-muted { color: var(--text-muted); }
+.text-xs { font-size: 0.75rem; }
+
+/* Base Card Component */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Important to keep internals from breaking borders */
+}
+
+/* 1. Compact Header (Status Bar) */
+.status-bar {
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    height: 48px;
+}
+.status-left, .status-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 320px; /* fixed widths keep center centered */
+}
+.status-right { justify-content: flex-end; }
+.status-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+.connection-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255,255,255,0.05);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+}
+.status-indicator {
+    width: 8px; height: 8px; border-radius: 50%;
+}
+.status-indicator.online { background-color: var(--status-green); box-shadow: 0 0 8px var(--status-green); }
+.status-indicator.offline { background-color: var(--status-red); box-shadow: 0 0 8px var(--status-red); }
+.status-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; }
+
+/* 2. Main Dashboard Grid */
+.dashboard-grid {
+    flex: 1;
+    min-height: 0; /* Critical for Flexbox nested scrolling/resizing */
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 1rem;
+}
+
+/* Left Column - Fixed Width, Flex Column */
+.col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 0;
+}
+
+/* FPV Card */
+.fpv-card {
+    flex: 0 0 auto; /* Natural height */
+}
+
+/* Telemetry Card */
+.telemetry-card {
+    flex: 1; /* Take remaining height in column */
+    min-height: 0;
+}
+
+/* Right Column - Flex Column */
+.col-right {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+.scene-card {
+    flex: 1;
+}
+
+/* Shared Card Elements */
+.compact-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border-color);
-    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: 1px solid var(--border);
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.glow-plane {
-    font-size: 20px;
-    color: var(--accent-cyan);
-    filter: drop-shadow(0 0 8px var(--accent-cyan));
-    animation: pulse 2s infinite alternate;
-}
-
-.logo-text {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.accent-text {
-    color: var(--accent-cyan);
-    font-weight: 300;
-}
-
-.status-panel {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 6px 12px;
-    border-radius: 20px;
-    border: 1px solid var(--border-color);
-}
-
-.status-indicator {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.status-indicator.online {
-    background-color: #10b981;
-    box-shadow: 0 0 8px #10b981;
-}
-
-.status-indicator.offline {
-    background-color: #ef4444;
-    box-shadow: 0 0 8px #ef4444;
-}
-
-.status-label {
-    font-size: 11px;
+.card-title {
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 1px;
-}
-
-/* Main workspace layout */
-.main-content {
-    display: grid;
-    grid-template-columns: 480px 1fr;
-    gap: 16px;
-    height: 100%;
-}
-
-.left-panel {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    height: 100%;
-}
-
-.right-panel {
-    height: 100%;
-}
-
-/* Card layout details */
-.camera-card {
-    height: 380px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     color: var(--text-secondary);
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.header-icon {
-    color: var(--accent-cyan);
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: color 0.2s;
 }
+.icon-btn:hover { color: var(--text-primary); }
 
-/* Simulated Camera Feed styling */
-.camera-viewport-container {
+.card-content {
     flex: 1;
-    padding: 12px;
+    min-height: 0;
+}
+
+/* FPV Camera Internals */
+.camera-wrapper {
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 16px 16px;
 }
-
 .camera-feed {
-    aspect-ratio: 4 / 3;
-    max-width: 100%;
-    max-height: 100%;
     width: 100%;
-    background-color: #0b0f19;
-    border-radius: 8px;
+    aspect-ratio: 4/3;
     position: relative;
-    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
     overflow: hidden;
+    background-color: #000;
+    border: 1px solid var(--border);
 }
-
-/* Overlay crosshair */
+#fpv-canvas {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+}
 .crosshair {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    transform: translate(-50%, -50%);
+    position: absolute; top: 50%; left: 50%; width: 20px; height: 20px;
+    transform: translate(-50%, -50%); pointer-events: none; z-index: 3;
 }
+.crosshair::before, .crosshair::after { content: ''; position: absolute; background: rgba(255, 255, 255, 0.4); }
+.crosshair::before { top: 9px; left: 0; width: 20px; height: 2px; }
+.crosshair::after { top: 9px; left: 0; width: 20px; height: 2px; } /* Wait, this is a typo in my initial thought */
+.crosshair::after { top: 0; left: 9px; width: 2px; height: 20px; }
 
-.crosshair::before, .crosshair::after {
-    content: '';
-    position: absolute;
-    background: rgba(0, 242, 254, 0.4);
-}
-
-.crosshair::before {
-    top: 9px;
-    left: 0;
-    width: 20px;
-    height: 2px;
-}
-
-.crosshair::after {
-    top: 0;
-    left: 9px;
-    width: 2px;
-    height: 20px;
-}
-
-/* Pseudo-YOLO Bounding Box overlay */
 .bbox {
-    position: absolute;
-    border: 2px solid var(--accent-orange);
-    box-shadow: 0 0 8px var(--accent-orange);
-    background-color: rgba(255, 94, 98, 0.15);
-    display: none; /* hidden until target visible */
-    pointer-events: none;
-    transition: all 0.05s linear;
+    position: absolute; border: 1px solid var(--safety-orange);
+    background: rgba(251, 146, 60, 0.15); display: none; pointer-events: none; z-index: 4;
 }
-
 .bbox-label {
-    position: absolute;
-    top: -22px;
-    left: -2px;
-    background-color: var(--accent-orange);
-    color: #fff;
-    padding: 2px 6px;
-    font-size: 10px;
-    font-weight: 800;
-    border-radius: 3px 3px 0 0;
-    white-space: nowrap;
-    text-transform: uppercase;
+    position: absolute; top: -16px; left: -1px;
+    background: var(--safety-orange); color: #000; padding: 1px 4px;
+    font-size: 9px; font-weight: 700; font-family: var(--font-mono);
 }
 
-/* Telemetry Gauges */
-.telemetry-card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Gauges Grid Internals */
 .gauges-grid {
-    flex: 1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    padding: 16px;
-}
-
-.gauge {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
-
-.gauge-value {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--accent-cyan);
-    filter: drop-shadow(0 0 4px rgba(0, 242, 254, 0.3));
-    margin-bottom: 4px;
-}
-
-.gauge-label {
-    font-size: 10px;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* 3D Scene Viewport */
-.scene-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); /* 3 rows fit perfectly */
+    gap: 0.75rem;
+    padding: 0.75rem;
     height: 100%;
+}
+.metric-item {
     display: flex;
     flex-direction: column;
-}
-
-#threejs-container {
-    flex: 1;
-    border-radius: 0 0 16px 16px;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Bottom Analytics Panel */
-.bottom-panel {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.analytics-grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 12px;
-    padding: 16px;
-}
-
-.analytics-stat {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border);
+    background-color: rgba(0,0,0,0.2);
+}
+.highlight-metric {
+    background-color: var(--safety-orange-dark);
+    border-color: rgba(251, 146, 60, 0.3);
+}
+.metric-label {
+    font-size: 0.65rem; font-weight: 500; color: var(--text-secondary); text-transform: uppercase;
+}
+.metric-value {
+    font-size: 1.25rem; font-weight: 700; color: var(--text-primary);
+}
+.metric-unit { font-size: 0.65rem; color: var(--text-muted); }
+
+/* Scene Content */
+.scene-content {
+    padding: 0;
+    display: flex;
+}
+.three-viewport {
+    flex: 1;
+    background-color: #000;
 }
 
-.stat-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 4px;
+/* 3. Compact Footer Analytics */
+.analytics-footer {
+    flex: 0 0 auto;
+    height: 60px;
+    justify-content: center;
+}
+.analytics-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 100%;
+}
+.data-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 1rem;
+    border-right: 1px solid var(--border);
+    align-items: center;
+}
+.data-block:last-child { border-right: none; }
+.data-block.border-left { border-left: 1px solid var(--border); }
+
+.data-label {
+    font-size: 0.65rem; color: var(--text-secondary); font-weight: 600; letter-spacing: 0.05em; font-family: var(--font-mono);
+}
+.data-value {
+    font-family: var(--font-mono); font-size: 1rem; font-weight: 600; color: var(--text-primary);
 }
 
-.stat-label {
-    font-size: 10px;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-/* Animations */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1.1);
-        opacity: 1;
-    }
+/* Fullscreen API Fixes */
+/* When an element goes fullscreen, it gets specific pseudoclasses we can style if needed */
+#threejs-container:fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
 }
