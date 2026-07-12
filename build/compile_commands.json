@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/variable.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/variable.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/attitude.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/attitude.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/wind.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/wind.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/actuation.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/actuation.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/simulator.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/simulator.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/pid_controller.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/motor_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/motor_model.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/camera_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/camera_model.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly.dir/src/sensor_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp",
+  "output": "CMakeFiles/mdfly.dir/src/sensor_model.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly_example.dir/examples/main.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp",
+  "output": "CMakeFiles/mdfly_example.dir/examples/main.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario1_formation.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/examples/scenario1_formation.cpp",
+  "output": "CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly_scenario2.dir/examples/scenario2_tracking.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario2_tracking.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/examples/scenario2_tracking.cpp",
+  "output": "CMakeFiles/mdfly_scenario2.dir/examples/scenario2_tracking.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp",
+  "output": "CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o"
+},
+{
+  "directory": "/Users/ertugrulcakir/Desktop/MDFly/build",
+  "command": "/usr/bin/clang++  -I/Users/ertugrulcakir/Desktop/MDFly/include -I/Users/ertugrulcakir/Desktop/MDFly/external -g -std=gnu++17 -arch arm64 -o CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp",
+  "file": "/Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp",
+  "output": "CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o"
+}
+]

@@ -914,6 +914,7 @@ CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/mavlink_comm.h
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/motor_model.h
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/pid_controller.h
+ /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/sensor_model.h
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/simulator.h
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/variable.h
  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/wind.h

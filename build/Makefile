@@ -458,6 +458,30 @@ src/pid_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/src/pid_controller.cpp.s
 .PHONY : src/pid_controller.cpp.s
 
+src/sensor_model.o: src/sensor_model.cpp.o
+.PHONY : src/sensor_model.o
+
+# target to build an object file
+src/sensor_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/src/sensor_model.cpp.o
+.PHONY : src/sensor_model.cpp.o
+
+src/sensor_model.i: src/sensor_model.cpp.i
+.PHONY : src/sensor_model.i
+
+# target to preprocess a source file
+src/sensor_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/src/sensor_model.cpp.i
+.PHONY : src/sensor_model.cpp.i
+
+src/sensor_model.s: src/sensor_model.cpp.s
+.PHONY : src/sensor_model.s
+
+# target to generate assembly for a file
+src/sensor_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/src/sensor_model.cpp.s
+.PHONY : src/sensor_model.cpp.s
+
 src/simulator.o: src/simulator.cpp.o
 .PHONY : src/simulator.o
 
@@ -577,6 +601,9 @@ help:
 	@echo "... src/pid_controller.o"
 	@echo "... src/pid_controller.i"
 	@echo "... src/pid_controller.s"
+	@echo "... src/sensor_model.o"
+	@echo "... src/sensor_model.i"
+	@echo "... src/sensor_model.s"
 	@echo "... src/simulator.o"
 	@echo "... src/simulator.i"
 	@echo "... src/simulator.s"

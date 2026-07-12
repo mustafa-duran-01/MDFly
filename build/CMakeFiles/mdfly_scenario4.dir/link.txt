@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -o mdfly_scenario4  libmdfly.a
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -o mdfly_scenario4  libmdfly.a

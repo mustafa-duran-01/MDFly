@@ -21,6 +21,7 @@ set(LIBRARY_SOURCES
     src/motor_model.cpp
     src/camera_model.cpp
     src/mavlink_comm.cpp
+    src/sensor_model.cpp
 )
 
 # Header files (for IDE visualization)
@@ -34,6 +35,7 @@ set(LIBRARY_HEADERS
     include/mdfly/motor_model.h
     include/mdfly/camera_model.h
     include/mdfly/mavlink_comm.h
+    include/mdfly/sensor_model.h
 )
 
 # Create library

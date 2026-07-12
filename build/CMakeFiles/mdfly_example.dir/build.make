@@ -76,15 +76,15 @@ CMakeFiles/mdfly_example.dir/examples/main.cpp.o: CMakeFiles/mdfly_example.dir/f
 CMakeFiles/mdfly_example.dir/examples/main.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp
 CMakeFiles/mdfly_example.dir/examples/main.cpp.o: CMakeFiles/mdfly_example.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mdfly_example.dir/examples/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_example.dir/examples/main.cpp.o -MF CMakeFiles/mdfly_example.dir/examples/main.cpp.o.d -o CMakeFiles/mdfly_example.dir/examples/main.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_example.dir/examples/main.cpp.o -MF CMakeFiles/mdfly_example.dir/examples/main.cpp.o.d -o CMakeFiles/mdfly_example.dir/examples/main.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp
 
 CMakeFiles/mdfly_example.dir/examples/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly_example.dir/examples/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp > CMakeFiles/mdfly_example.dir/examples/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp > CMakeFiles/mdfly_example.dir/examples/main.cpp.i
 
 CMakeFiles/mdfly_example.dir/examples/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly_example.dir/examples/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp -o CMakeFiles/mdfly_example.dir/examples/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/main.cpp -o CMakeFiles/mdfly_example.dir/examples/main.cpp.s
 
 # Object files for target mdfly_example
 mdfly_example_OBJECTS = \

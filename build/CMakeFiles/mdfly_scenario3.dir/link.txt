@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -o mdfly_scenario3  libmdfly.a
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -o mdfly_scenario3  libmdfly.a

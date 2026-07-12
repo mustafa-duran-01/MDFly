@@ -100,12 +100,12 @@ clean: CMakeFiles/mdfly_scenario4.dir/clean
 CMakeFiles/mdfly.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target mdfly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target mdfly"
 .PHONY : CMakeFiles/mdfly.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly.dir/rule
@@ -117,7 +117,7 @@ mdfly: CMakeFiles/mdfly.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly.dir/build.make CMakeFiles/mdfly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target mdfly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target mdfly"
 .PHONY : CMakeFiles/mdfly.dir/codegen
 
 # clean rule for target.
@@ -132,12 +132,12 @@ CMakeFiles/mdfly.dir/clean:
 CMakeFiles/mdfly_example.dir/all: CMakeFiles/mdfly.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_example.dir/build.make CMakeFiles/mdfly_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_example.dir/build.make CMakeFiles/mdfly_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=11,12 "Built target mdfly_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=12,13 "Built target mdfly_example"
 .PHONY : CMakeFiles/mdfly_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly_example.dir/rule
@@ -149,7 +149,7 @@ mdfly_example: CMakeFiles/mdfly_example.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly_example.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_example.dir/build.make CMakeFiles/mdfly_example.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=11,12 "Finished codegen for target mdfly_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=12,13 "Finished codegen for target mdfly_example"
 .PHONY : CMakeFiles/mdfly_example.dir/codegen
 
 # clean rule for target.
@@ -164,12 +164,12 @@ CMakeFiles/mdfly_example.dir/clean:
 CMakeFiles/mdfly_scenario1.dir/all: CMakeFiles/mdfly.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario1.dir/build.make CMakeFiles/mdfly_scenario1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario1.dir/build.make CMakeFiles/mdfly_scenario1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=13,14 "Built target mdfly_scenario1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=14,15 "Built target mdfly_scenario1"
 .PHONY : CMakeFiles/mdfly_scenario1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly_scenario1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly_scenario1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly_scenario1.dir/rule
@@ -181,7 +181,7 @@ mdfly_scenario1: CMakeFiles/mdfly_scenario1.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly_scenario1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario1.dir/build.make CMakeFiles/mdfly_scenario1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=13,14 "Finished codegen for target mdfly_scenario1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=14,15 "Finished codegen for target mdfly_scenario1"
 .PHONY : CMakeFiles/mdfly_scenario1.dir/codegen
 
 # clean rule for target.
@@ -196,12 +196,12 @@ CMakeFiles/mdfly_scenario1.dir/clean:
 CMakeFiles/mdfly_scenario2.dir/all: CMakeFiles/mdfly.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario2.dir/build.make CMakeFiles/mdfly_scenario2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario2.dir/build.make CMakeFiles/mdfly_scenario2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=15,16 "Built target mdfly_scenario2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=16,17 "Built target mdfly_scenario2"
 .PHONY : CMakeFiles/mdfly_scenario2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly_scenario2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly_scenario2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly_scenario2.dir/rule
@@ -213,7 +213,7 @@ mdfly_scenario2: CMakeFiles/mdfly_scenario2.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly_scenario2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario2.dir/build.make CMakeFiles/mdfly_scenario2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=15,16 "Finished codegen for target mdfly_scenario2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=16,17 "Finished codegen for target mdfly_scenario2"
 .PHONY : CMakeFiles/mdfly_scenario2.dir/codegen
 
 # clean rule for target.
@@ -228,12 +228,12 @@ CMakeFiles/mdfly_scenario2.dir/clean:
 CMakeFiles/mdfly_scenario3.dir/all: CMakeFiles/mdfly.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario3.dir/build.make CMakeFiles/mdfly_scenario3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario3.dir/build.make CMakeFiles/mdfly_scenario3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=17,18 "Built target mdfly_scenario3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=18,19 "Built target mdfly_scenario3"
 .PHONY : CMakeFiles/mdfly_scenario3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly_scenario3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly_scenario3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly_scenario3.dir/rule
@@ -245,7 +245,7 @@ mdfly_scenario3: CMakeFiles/mdfly_scenario3.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly_scenario3.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario3.dir/build.make CMakeFiles/mdfly_scenario3.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=17,18 "Finished codegen for target mdfly_scenario3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=18,19 "Finished codegen for target mdfly_scenario3"
 .PHONY : CMakeFiles/mdfly_scenario3.dir/codegen
 
 # clean rule for target.
@@ -260,12 +260,12 @@ CMakeFiles/mdfly_scenario3.dir/clean:
 CMakeFiles/mdfly_scenario4.dir/all: CMakeFiles/mdfly.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario4.dir/build.make CMakeFiles/mdfly_scenario4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario4.dir/build.make CMakeFiles/mdfly_scenario4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=19,20 "Built target mdfly_scenario4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=20,21 "Built target mdfly_scenario4"
 .PHONY : CMakeFiles/mdfly_scenario4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdfly_scenario4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mdfly_scenario4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdfly_scenario4.dir/rule
@@ -277,7 +277,7 @@ mdfly_scenario4: CMakeFiles/mdfly_scenario4.dir/rule
 # codegen rule for target.
 CMakeFiles/mdfly_scenario4.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mdfly_scenario4.dir/build.make CMakeFiles/mdfly_scenario4.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=19,20 "Finished codegen for target mdfly_scenario4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=20,21 "Finished codegen for target mdfly_scenario4"
 .PHONY : CMakeFiles/mdfly_scenario4.dir/codegen
 
 # clean rule for target.

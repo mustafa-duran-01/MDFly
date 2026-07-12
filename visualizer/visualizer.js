@@ -48,6 +48,13 @@ function updateTelemetry(data) {
     document.getElementById('val-momentum-ang').textContent = data.momentum_angular_magnitude.toFixed(3) + ' kg·m²/s';
     document.getElementById('val-elevator').textContent = (data.elevator * 180 / Math.PI).toFixed(1) + '°';
     document.getElementById('val-throttle').textContent = (data.throttle * 100.0).toFixed(0) + '%';
+
+    if (data.position_n !== undefined) {
+        document.getElementById('val-gps-true').textContent = data.position_n.toFixed(1) + ' m';
+    }
+    if (data.gps_pos_n_noisy !== undefined) {
+        document.getElementById('val-gps-noisy').textContent = data.gps_pos_n_noisy.toFixed(1) + ' m';
+    }
 }
 
 // ---------------------------------------------------------

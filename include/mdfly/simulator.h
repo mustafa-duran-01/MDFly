@@ -12,6 +12,7 @@
 #include "actuation.h"
 #include "motor_model.h"
 #include "camera_model.h"
+#include "sensor_model.h"
 
 namespace mdfly {
 
@@ -129,6 +130,7 @@ public:
     Wind wind;
     MotorModel motor;
     CameraModel camera;
+    SensorModel sensor;
     double last_motor_omega_dot = 0.0;
     double last_gear_cmd = 1.0;
     std::vector<TargetObject> targets;

@@ -859,6 +859,7 @@ CMakeFiles/mdfly.dir/src/simulator.cpp.o: \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/actuation.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/motor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/camera_model.h \
+  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/sensor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/external/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray \

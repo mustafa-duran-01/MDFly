@@ -76,15 +76,15 @@ CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o: CMakeFiles/mdfly_sc
 CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp
 CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o: CMakeFiles/mdfly_scenario4.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -MF CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o.d -o CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -MF CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o.d -o CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp
 
 CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp > CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp > CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.i
 
 CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp -o CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/scenario4_qgc.cpp -o CMakeFiles/mdfly_scenario4.dir/examples/scenario4_qgc.cpp.s
 
 # Object files for target mdfly_scenario4
 mdfly_scenario4_OBJECTS = \

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mdfly.dir/src/motor_model.cpp.o.d"
   "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o"
   "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o.d"
+  "CMakeFiles/mdfly.dir/src/sensor_model.cpp.o"
+  "CMakeFiles/mdfly.dir/src/sensor_model.cpp.o.d"
   "CMakeFiles/mdfly.dir/src/simulator.cpp.o"
   "CMakeFiles/mdfly.dir/src/simulator.cpp.o.d"
   "CMakeFiles/mdfly.dir/src/variable.cpp.o"

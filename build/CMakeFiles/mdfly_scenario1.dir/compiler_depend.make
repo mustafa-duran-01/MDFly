@@ -913,6 +913,7 @@ CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o: /Users/ertugr
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/mavlink_comm.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/motor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/pid_controller.h \
+  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/sensor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/simulator.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/variable.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/wind.h
@@ -2735,6 +2736,8 @@ CMakeFiles/mdfly_scenario1.dir/examples/scenario1_formation.cpp.o: /Users/ertugr
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg:
+
+/Users/ertugrulcakir/Desktop/MDFly/include/mdfly/sensor_model.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_const.h:
 

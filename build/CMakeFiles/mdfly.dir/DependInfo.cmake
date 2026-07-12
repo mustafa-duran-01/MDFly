@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp" "CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o.d"
   "/Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp" "CMakeFiles/mdfly.dir/src/motor_model.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/motor_model.cpp.o.d"
   "/Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp" "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o.d"
+  "/Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp" "CMakeFiles/mdfly.dir/src/sensor_model.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/sensor_model.cpp.o.d"
   "/Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp" "CMakeFiles/mdfly.dir/src/simulator.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/simulator.cpp.o.d"
   "/Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp" "CMakeFiles/mdfly.dir/src/variable.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/variable.cpp.o.d"
   "/Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp" "CMakeFiles/mdfly.dir/src/wind.cpp.o" "gcc" "CMakeFiles/mdfly.dir/src/wind.cpp.o.d"

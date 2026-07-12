@@ -138,6 +138,26 @@ void MDFly::load_config(const std::string& config_path) {
 
     actuation.finalize();
 
+    // Register noisy sensor variables
+    auto create_noisy_var = [](const std::string& name, const std::string& unit, const std::string& label) {
+        auto v = std::make_unique<Variable>(name, unit, label);
+        v->has_init_min = true; v->has_init_max = true;
+        v->init_min = 0.0; v->init_max = 0.0;
+        return v;
+    };
+    state["imu_accel_x_noisy"] = create_noisy_var("imu_accel_x_noisy", "m/s^2", "Acc X (Noisy)");
+    state["imu_accel_y_noisy"] = create_noisy_var("imu_accel_y_noisy", "m/s^2", "Acc Y (Noisy)");
+    state["imu_accel_z_noisy"] = create_noisy_var("imu_accel_z_noisy", "m/s^2", "Acc Z (Noisy)");
+    state["imu_gyro_p_noisy"] = create_noisy_var("imu_gyro_p_noisy", "rad/s", "Gyro P (Noisy)");
+    state["imu_gyro_q_noisy"] = create_noisy_var("imu_gyro_q_noisy", "rad/s", "Gyro Q (Noisy)");
+    state["imu_gyro_r_noisy"] = create_noisy_var("imu_gyro_r_noisy", "rad/s", "Gyro R (Noisy)");
+    state["gps_pos_n_noisy"] = create_noisy_var("gps_pos_n_noisy", "m", "GPS N (Noisy)");
+    state["gps_pos_e_noisy"] = create_noisy_var("gps_pos_e_noisy", "m", "GPS E (Noisy)");
+    state["gps_pos_d_noisy"] = create_noisy_var("gps_pos_d_noisy", "m", "GPS D (Noisy)");
+    state["gps_vel_u_noisy"] = create_noisy_var("gps_vel_u_noisy", "m/s", "GPS U (Noisy)");
+    state["gps_vel_v_noisy"] = create_noisy_var("gps_vel_v_noisy", "m/s", "GPS V (Noisy)");
+    state["gps_vel_w_noisy"] = create_noisy_var("gps_vel_w_noisy", "m/s", "GPS W (Noisy)");
+
     // Map energy variable requirements
     for (const auto& e_name : energy_states) {
         auto* ev = dynamic_cast<EnergyVariable*>(state[e_name].get());
@@ -488,6 +508,59 @@ bool MDFly::step(const std::vector<double>& commands, std::string& term_reason) 
 
         // Advance wind step
         wind.step(cur_sim_step);
+
+        // Sensor Model Update
+        std::array<double, 3> pqr = {
+            state["omega_p"]->value,
+            state["omega_q"]->value,
+            state["omega_r"]->value
+        };
+        std::array<double, 3> v_body = {
+            state["velocity_u"]->value,
+            state["velocity_v"]->value,
+            state["velocity_w"]->value
+        };
+        std::vector<double> ctrl_vals = get_states_vector(model_inputs);
+        std::array<double, 4> controls = {ctrl_vals[0], ctrl_vals[1], ctrl_vals[2], ctrl_vals[3]};
+        auto fm = forces(attitude.quaternion, pqr, v_body, controls);
+        
+        std::array<double, 3> true_accel = {
+            pqr[2] * v_body[1] - pqr[1] * v_body[2] + fm.first[0] / params.mass,
+            pqr[0] * v_body[2] - pqr[2] * v_body[0] + fm.first[1] / params.mass,
+            pqr[1] * v_body[0] - pqr[0] * v_body[1] + fm.first[2] / params.mass
+        };
+        
+        std::array<double, 3> true_pos = {
+            state["position_n"]->value,
+            state["position_e"]->value,
+            state["position_d"]->value
+        };
+        
+        std::array<std::array<double, 3>, 3> Rvb = rot_b_v(attitude.quaternion);
+        std::array<double, 3> true_vel_ned = {
+            Rvb[0][0] * v_body[0] + Rvb[1][0] * v_body[1] + Rvb[2][0] * v_body[2],
+            Rvb[0][1] * v_body[0] + Rvb[1][1] * v_body[1] + Rvb[2][1] * v_body[2],
+            Rvb[0][2] * v_body[0] + Rvb[1][2] * v_body[1] + Rvb[2][2] * v_body[2]
+        };
+        
+        sensor.step(true_accel, pqr, true_pos, true_vel_ned);
+        
+        state["imu_accel_x_noisy"]->set_value(sensor.noisy_accel[0]);
+        state["imu_accel_y_noisy"]->set_value(sensor.noisy_accel[1]);
+        state["imu_accel_z_noisy"]->set_value(sensor.noisy_accel[2]);
+        
+        state["imu_gyro_p_noisy"]->set_value(sensor.noisy_gyro[0]);
+        state["imu_gyro_q_noisy"]->set_value(sensor.noisy_gyro[1]);
+        state["imu_gyro_r_noisy"]->set_value(sensor.noisy_gyro[2]);
+        
+        state["gps_pos_n_noisy"]->set_value(sensor.noisy_gps_pos[0]);
+        state["gps_pos_e_noisy"]->set_value(sensor.noisy_gps_pos[1]);
+        state["gps_pos_d_noisy"]->set_value(sensor.noisy_gps_pos[2]);
+        
+        state["gps_vel_u_noisy"]->set_value(sensor.noisy_gps_vel[0]);
+        state["gps_vel_v_noisy"]->set_value(sensor.noisy_gps_vel[1]);
+        state["gps_vel_w_noisy"]->set_value(sensor.noisy_gps_vel[2]);
+
         cur_sim_step++;
 
         return true;

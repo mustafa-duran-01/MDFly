@@ -76,127 +76,141 @@ CMakeFiles/mdfly.dir/src/variable.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/variable.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp
 CMakeFiles/mdfly.dir/src/variable.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mdfly.dir/src/variable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/variable.cpp.o -MF CMakeFiles/mdfly.dir/src/variable.cpp.o.d -o CMakeFiles/mdfly.dir/src/variable.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/variable.cpp.o -MF CMakeFiles/mdfly.dir/src/variable.cpp.o.d -o CMakeFiles/mdfly.dir/src/variable.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp
 
 CMakeFiles/mdfly.dir/src/variable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/variable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp > CMakeFiles/mdfly.dir/src/variable.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp > CMakeFiles/mdfly.dir/src/variable.cpp.i
 
 CMakeFiles/mdfly.dir/src/variable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/variable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp -o CMakeFiles/mdfly.dir/src/variable.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/variable.cpp -o CMakeFiles/mdfly.dir/src/variable.cpp.s
 
 CMakeFiles/mdfly.dir/src/attitude.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/attitude.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp
 CMakeFiles/mdfly.dir/src/attitude.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mdfly.dir/src/attitude.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/attitude.cpp.o -MF CMakeFiles/mdfly.dir/src/attitude.cpp.o.d -o CMakeFiles/mdfly.dir/src/attitude.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/attitude.cpp.o -MF CMakeFiles/mdfly.dir/src/attitude.cpp.o.d -o CMakeFiles/mdfly.dir/src/attitude.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp
 
 CMakeFiles/mdfly.dir/src/attitude.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/attitude.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp > CMakeFiles/mdfly.dir/src/attitude.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp > CMakeFiles/mdfly.dir/src/attitude.cpp.i
 
 CMakeFiles/mdfly.dir/src/attitude.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/attitude.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp -o CMakeFiles/mdfly.dir/src/attitude.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/attitude.cpp -o CMakeFiles/mdfly.dir/src/attitude.cpp.s
 
 CMakeFiles/mdfly.dir/src/wind.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/wind.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp
 CMakeFiles/mdfly.dir/src/wind.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mdfly.dir/src/wind.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/wind.cpp.o -MF CMakeFiles/mdfly.dir/src/wind.cpp.o.d -o CMakeFiles/mdfly.dir/src/wind.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/wind.cpp.o -MF CMakeFiles/mdfly.dir/src/wind.cpp.o.d -o CMakeFiles/mdfly.dir/src/wind.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp
 
 CMakeFiles/mdfly.dir/src/wind.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/wind.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp > CMakeFiles/mdfly.dir/src/wind.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp > CMakeFiles/mdfly.dir/src/wind.cpp.i
 
 CMakeFiles/mdfly.dir/src/wind.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/wind.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp -o CMakeFiles/mdfly.dir/src/wind.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/wind.cpp -o CMakeFiles/mdfly.dir/src/wind.cpp.s
 
 CMakeFiles/mdfly.dir/src/actuation.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/actuation.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp
 CMakeFiles/mdfly.dir/src/actuation.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mdfly.dir/src/actuation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/actuation.cpp.o -MF CMakeFiles/mdfly.dir/src/actuation.cpp.o.d -o CMakeFiles/mdfly.dir/src/actuation.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/actuation.cpp.o -MF CMakeFiles/mdfly.dir/src/actuation.cpp.o.d -o CMakeFiles/mdfly.dir/src/actuation.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp
 
 CMakeFiles/mdfly.dir/src/actuation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/actuation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp > CMakeFiles/mdfly.dir/src/actuation.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp > CMakeFiles/mdfly.dir/src/actuation.cpp.i
 
 CMakeFiles/mdfly.dir/src/actuation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/actuation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp -o CMakeFiles/mdfly.dir/src/actuation.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/actuation.cpp -o CMakeFiles/mdfly.dir/src/actuation.cpp.s
 
 CMakeFiles/mdfly.dir/src/simulator.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/simulator.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp
 CMakeFiles/mdfly.dir/src/simulator.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mdfly.dir/src/simulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/simulator.cpp.o -MF CMakeFiles/mdfly.dir/src/simulator.cpp.o.d -o CMakeFiles/mdfly.dir/src/simulator.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/simulator.cpp.o -MF CMakeFiles/mdfly.dir/src/simulator.cpp.o.d -o CMakeFiles/mdfly.dir/src/simulator.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp
 
 CMakeFiles/mdfly.dir/src/simulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/simulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp > CMakeFiles/mdfly.dir/src/simulator.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp > CMakeFiles/mdfly.dir/src/simulator.cpp.i
 
 CMakeFiles/mdfly.dir/src/simulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/simulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp -o CMakeFiles/mdfly.dir/src/simulator.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/simulator.cpp -o CMakeFiles/mdfly.dir/src/simulator.cpp.s
 
 CMakeFiles/mdfly.dir/src/pid_controller.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/pid_controller.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp
 CMakeFiles/mdfly.dir/src/pid_controller.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mdfly.dir/src/pid_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/pid_controller.cpp.o -MF CMakeFiles/mdfly.dir/src/pid_controller.cpp.o.d -o CMakeFiles/mdfly.dir/src/pid_controller.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/pid_controller.cpp.o -MF CMakeFiles/mdfly.dir/src/pid_controller.cpp.o.d -o CMakeFiles/mdfly.dir/src/pid_controller.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp
 
 CMakeFiles/mdfly.dir/src/pid_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/pid_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp > CMakeFiles/mdfly.dir/src/pid_controller.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp > CMakeFiles/mdfly.dir/src/pid_controller.cpp.i
 
 CMakeFiles/mdfly.dir/src/pid_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/pid_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp -o CMakeFiles/mdfly.dir/src/pid_controller.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/pid_controller.cpp -o CMakeFiles/mdfly.dir/src/pid_controller.cpp.s
 
 CMakeFiles/mdfly.dir/src/motor_model.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/motor_model.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp
 CMakeFiles/mdfly.dir/src/motor_model.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mdfly.dir/src/motor_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/motor_model.cpp.o -MF CMakeFiles/mdfly.dir/src/motor_model.cpp.o.d -o CMakeFiles/mdfly.dir/src/motor_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/motor_model.cpp.o -MF CMakeFiles/mdfly.dir/src/motor_model.cpp.o.d -o CMakeFiles/mdfly.dir/src/motor_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp
 
 CMakeFiles/mdfly.dir/src/motor_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/motor_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp > CMakeFiles/mdfly.dir/src/motor_model.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp > CMakeFiles/mdfly.dir/src/motor_model.cpp.i
 
 CMakeFiles/mdfly.dir/src/motor_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/motor_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp -o CMakeFiles/mdfly.dir/src/motor_model.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/motor_model.cpp -o CMakeFiles/mdfly.dir/src/motor_model.cpp.s
 
 CMakeFiles/mdfly.dir/src/camera_model.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/camera_model.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp
 CMakeFiles/mdfly.dir/src/camera_model.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mdfly.dir/src/camera_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/camera_model.cpp.o -MF CMakeFiles/mdfly.dir/src/camera_model.cpp.o.d -o CMakeFiles/mdfly.dir/src/camera_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/camera_model.cpp.o -MF CMakeFiles/mdfly.dir/src/camera_model.cpp.o.d -o CMakeFiles/mdfly.dir/src/camera_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp
 
 CMakeFiles/mdfly.dir/src/camera_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/camera_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp > CMakeFiles/mdfly.dir/src/camera_model.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp > CMakeFiles/mdfly.dir/src/camera_model.cpp.i
 
 CMakeFiles/mdfly.dir/src/camera_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/camera_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp -o CMakeFiles/mdfly.dir/src/camera_model.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/camera_model.cpp -o CMakeFiles/mdfly.dir/src/camera_model.cpp.s
 
 CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o: CMakeFiles/mdfly.dir/flags.make
 CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp
 CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o -MF CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o.d -o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o -MF CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o.d -o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp
 
 CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp > CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp > CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.i
 
 CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp -o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/mavlink_comm.cpp -o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.s
+
+CMakeFiles/mdfly.dir/src/sensor_model.cpp.o: CMakeFiles/mdfly.dir/flags.make
+CMakeFiles/mdfly.dir/src/sensor_model.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp
+CMakeFiles/mdfly.dir/src/sensor_model.cpp.o: CMakeFiles/mdfly.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mdfly.dir/src/sensor_model.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly.dir/src/sensor_model.cpp.o -MF CMakeFiles/mdfly.dir/src/sensor_model.cpp.o.d -o CMakeFiles/mdfly.dir/src/sensor_model.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp
+
+CMakeFiles/mdfly.dir/src/sensor_model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly.dir/src/sensor_model.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp > CMakeFiles/mdfly.dir/src/sensor_model.cpp.i
+
+CMakeFiles/mdfly.dir/src/sensor_model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly.dir/src/sensor_model.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/src/sensor_model.cpp -o CMakeFiles/mdfly.dir/src/sensor_model.cpp.s
 
 # Object files for target mdfly
 mdfly_OBJECTS = \
@@ -208,7 +222,8 @@ mdfly_OBJECTS = \
 "CMakeFiles/mdfly.dir/src/pid_controller.cpp.o" \
 "CMakeFiles/mdfly.dir/src/motor_model.cpp.o" \
 "CMakeFiles/mdfly.dir/src/camera_model.cpp.o" \
-"CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o"
+"CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o" \
+"CMakeFiles/mdfly.dir/src/sensor_model.cpp.o"
 
 # External object files for target mdfly
 mdfly_EXTERNAL_OBJECTS =
@@ -222,9 +237,10 @@ libmdfly.a: CMakeFiles/mdfly.dir/src/pid_controller.cpp.o
 libmdfly.a: CMakeFiles/mdfly.dir/src/motor_model.cpp.o
 libmdfly.a: CMakeFiles/mdfly.dir/src/camera_model.cpp.o
 libmdfly.a: CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o
+libmdfly.a: CMakeFiles/mdfly.dir/src/sensor_model.cpp.o
 libmdfly.a: CMakeFiles/mdfly.dir/build.make
 libmdfly.a: CMakeFiles/mdfly.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libmdfly.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libmdfly.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mdfly.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mdfly.dir/link.txt --verbose=$(VERBOSE)
 

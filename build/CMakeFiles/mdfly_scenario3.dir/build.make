@@ -76,15 +76,15 @@ CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o: CMakeFi
 CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o: /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp
 CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o: CMakeFiles/mdfly_scenario3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ertugrulcakir/Desktop/MDFly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -MF CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o.d -o CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -MF CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o.d -o CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o -c /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp
 
 CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp > CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp > CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.i
 
 CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp -o CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ertugrulcakir/Desktop/MDFly/examples/scenario3_takeoff_landing.cpp -o CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.s
 
 # Object files for target mdfly_scenario3
 mdfly_scenario3_OBJECTS = \

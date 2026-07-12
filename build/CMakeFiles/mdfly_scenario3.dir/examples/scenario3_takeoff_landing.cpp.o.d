@@ -912,5 +912,6 @@ CMakeFiles/mdfly_scenario3.dir/examples/scenario3_takeoff_landing.cpp.o: \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/actuation.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/motor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/camera_model.h \
+  /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/sensor_model.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/pid_controller.h \
   /Users/ertugrulcakir/Desktop/MDFly/include/mdfly/mavlink_comm.h
