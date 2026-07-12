@@ -184,7 +184,8 @@ int main() {
             json += "\"momentum_angular_magnitude\":" + std::to_string(sim.state["momentum_angular_magnitude"]->value) + ",";
             json += "\"elevator\":" + std::to_string(sim.state["elevator"]->value) + ",";
             json += "\"aileron\":" + std::to_string(sim.state["aileron"]->value) + ",";
-            json += "\"throttle\":" + std::to_string(sim.state["throttle"]->value);
+            json += "\"throttle\":" + std::to_string(sim.state["throttle"]->value) + ",";
+            json += "\"gps_pos_n_noisy\":" + std::to_string(sim.state["gps_pos_n_noisy"]->value);
             json += "}";
 
             sendto(vis_socket, json.c_str(), json.size(), 0, (struct sockaddr*)&vis_addr, sizeof(vis_addr));

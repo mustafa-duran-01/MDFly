@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mdfly_scenario2.dir/examples/scenario2_tracking.cpp.o -o mdfly_scenario2  libmdfly.a

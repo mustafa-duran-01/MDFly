@@ -125,6 +125,7 @@ int main() {
             json += "\"pitch\":" + std::to_string(follower.state["pitch"]->value) + ",";
             json += "\"yaw\":" + std::to_string(follower.state["yaw"]->value) + ",";
             json += "\"position_n\":" + std::to_string(follower.state["position_n"]->value) + ",";
+            json += "\"gps_pos_n_noisy\":" + std::to_string(follower.state["gps_pos_n_noisy"]->value) + ",";
             json += "\"position_e\":" + std::to_string(follower.state["position_e"]->value) + ",";
             json += "\"position_d\":" + std::to_string(follower.state["position_d"]->value) + ",";
             json += "\"velocity_u\":" + std::to_string(follower.state["velocity_u"]->value) + ",";
@@ -175,6 +176,12 @@ int main() {
                 double rel_alt = -follower.state["position_d"]->value;
                 
                 mavlink.send_global_position(time_ms, lat, lon, alt, rel_alt, 22.0f, 0.0f, 0.0f, follower.state["yaw"]->value * 180.0 / M_PI);
+            }
+
+            if (i % 100 == 0) {
+                std::cout << "[Sensor Model Test] t = " << std::fixed << std::setprecision(1) << t << "s | "
+                          << "True Pos N: " << follower.state["position_n"]->value << "m | "
+                          << "Noisy Pos N: " << follower.state["gps_pos_n_noisy"]->value << "m" << std::endl;
             }
 
             usleep(10000); // 10ms (100Hz)

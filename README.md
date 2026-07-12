@@ -2,6 +2,8 @@
 
 MDFly is a high-performance, physics-based 6-Degrees-of-Freedom (6-DOF) flight dynamics simulator written in C++. It features realistic aerodynamic modeling, electric motor-propeller coupling (with gyroscopic and torque reactions), spring-damper landing gear mechanics with ground friction, cascaded PID autopilots, and an advanced **Lead Pursuit** guidance system. 
 
+*Special thanks and shoutout to the **PyFly** project for the initial inspiration and references.*
+
 It includes a real-time **3D WebGL Web Visualizer** with a nose-mounted FPV camera feed, horizon-stabilized chase view, and a simulated **YOLO bounding-box HUD overlay** for target tracking, alongside **MAVLink telemetry** streaming to ground control stations like QGroundControl.
 
 ---
@@ -85,7 +87,7 @@ where $t_{lead}$ is dynamically adjusted based on range. The autopilot steers th
 2. Start the WebSocket bridge dependencies in the visualizer folder:
    ```bash
    cd visualizer
-   npm install ws  # If not already installed
+   pip3 install websockets  # If not already installed
    ```
 
 ---

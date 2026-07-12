@@ -2,136 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDFly 3D Flight Telemetry Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MDFly - Tactical Telemetry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="dashboard.css">
+    
     <!-- Three.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="app-container">
-        <!-- Sidebar Navigation / Logo -->
-        <header class="app-header">
-            <div class="logo">
-                <i class="fa-solid fa-plane-up navigation-icon glow-plane"></i>
-                <span class="logo-text">MDFLY <span class="accent-text">3D SIM</span></span>
+        <!-- Compact Status Bar Header -->
+        <header class="status-bar card">
+            <div class="status-left">
+                <i class="fa-solid fa-plane-lock text-blue"></i>
+                <span class="brand-title">MDFly</span>
             </div>
-            <div class="status-panel">
-                <span class="status-indicator online"></span>
-                <span class="status-label" id="ws-status">DISCONNECTED</span>
+            <div class="status-center">
+            </div>
+            <div class="status-right">
+                <span class="font-mono text-muted text-xs" style="margin-right: 0.5rem;">UPLINK: ACTIVE</span>
+                <div class="connection-pill">
+                    <span class="status-indicator"></span>
+                    <span id="ws-status" class="status-label offline font-mono">DISCONNECTED</span>
+                </div>
             </div>
         </header>
 
-        <!-- Main Workspace -->
-        <main class="main-content">
-            <!-- Left Panel: Live Controls & Bounding Box Feed -->
-            <section class="left-panel">
-                <!-- Virtual Nose Camera / Pseudo-YOLO Feed -->
-                <div class="card camera-card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-camera header-icon"></i>
-                        <span>Nose Camera Bounding Box Feed (Pseudo-YOLO)</span>
+        <!-- Main Dashboard (Fills remaining height) -->
+        <main class="dashboard-grid">
+            
+            <!-- Left Column: FPV & Telemetry Grid -->
+            <div class="col-left">
+                <!-- FPV Camera Card -->
+                <div class="card fpv-card">
+                    <div class="card-header compact-header">
+                        <span class="card-title"><i class="fa-solid fa-crosshairs text-muted"></i> OPTICAL FEED</span>
                     </div>
-                    <div class="camera-viewport-container">
-                        <!-- Simulated Camera Feed Viewport -->
+                    <div class="card-content camera-wrapper">
                         <div class="camera-feed" id="camera-feed">
-                            <canvas id="fpv-canvas" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
-                            <div class="crosshair" style="z-index: 3;"></div>
-                            <!-- Target Bounding Box -->
-                            <div class="bbox" id="yolo-bbox" style="z-index: 4;">
+                            <canvas id="fpv-canvas"></canvas>
+                            <div class="crosshair"></div>
+                            <div class="bbox" id="yolo-bbox">
                                 <span class="bbox-label" id="yolo-label">Target: 0.98</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Telemetry HUD Gauges -->
+                <!-- Telemetry Gauges -->
                 <div class="card telemetry-card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-gauge header-icon"></i>
-                        <span>Primary Flight Telemetry</span>
+                    <div class="card-header compact-header">
+                        <span class="card-title"><i class="fa-solid fa-gauge text-muted"></i> PRIMARY FLIGHT DISPLAY</span>
                     </div>
-                    <div class="gauges-grid">
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-airspeed">0.0</span>
-                            <span class="gauge-label">Airspeed (m/s)</span>
+                    <div class="card-content gauges-grid">
+                        <div class="metric-item">
+                            <span class="metric-label">Airspeed</span>
+                            <span class="metric-value text-blue" id="val-airspeed">0.0</span>
+                            <span class="metric-unit">m/s</span>
                         </div>
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-altitude">0.0</span>
-                            <span class="gauge-label">Altitude (m)</span>
+                        <div class="metric-item">
+                            <span class="metric-label">Altitude</span>
+                            <span class="metric-value text-blue" id="val-altitude">0.0</span>
+                            <span class="metric-unit">m</span>
                         </div>
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-roll">0.0°</span>
-                            <span class="gauge-label">Roll</span>
+                        <div class="metric-item">
+                            <span class="metric-label">Roll</span>
+                            <span class="metric-value" id="val-roll">0.0°</span>
                         </div>
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-pitch">0.0°</span>
-                            <span class="gauge-label">Pitch</span>
+                        <div class="metric-item">
+                            <span class="metric-label">Pitch</span>
+                            <span class="metric-value" id="val-pitch">0.0°</span>
                         </div>
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-yaw">0.0°</span>
-                            <span class="gauge-label">Yaw</span>
+                        <div class="metric-item">
+                            <span class="metric-label">Yaw</span>
+                            <span class="metric-value" id="val-yaw">0.0°</span>
                         </div>
-                        <div class="gauge">
-                            <span class="gauge-value" id="val-rpm">0</span>
-                            <span class="gauge-label">Motor RPM</span>
+                        <div class="metric-item highlight-metric">
+                            <span class="metric-label">Motor RPM</span>
+                            <span class="metric-value text-orange" id="val-rpm">0</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Right Panel: 3D Visualization Viewport -->
-            <section class="right-panel">
+            <!-- Right Column: 3D Visualization -->
+            <div class="col-right">
                 <div class="card scene-card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-vr-cardboard header-icon"></i>
-                        <span>3D Flight Environment (Three.js)</span>
+                    <div class="card-header compact-header">
+                        <span class="card-title"><i class="fa-solid fa-cube text-muted"></i> SPATIAL ENVIRONMENT</span>
+                        <button id="btn-fullscreen" class="icon-btn" title="Toggle Fullscreen"><i class="fa-solid fa-expand"></i></button>
                     </div>
-                    <div id="threejs-container"></div>
+                    <div class="card-content scene-content">
+                        <div id="threejs-container" class="three-viewport"></div>
+                    </div>
                 </div>
-            </section>
+            </div>
+            
         </main>
 
-        <!-- Bottom Panel: Advanced Conservation Variables (Energy & Momentum) -->
-        <footer class="bottom-panel">
-            <div class="card footer-card">
-                <div class="card-header">
-                    <i class="fa-solid fa-chart-line header-icon"></i>
-                    <span>Energy & Momentum Conservation Analytics</span>
+        <!-- Compact Footer Analytics -->
+        <footer class="card analytics-footer">
+            <div class="analytics-row">
+                <div class="data-block">
+                    <span class="data-label">Total Energy</span>
+                    <span class="data-value" id="val-energy-tot">0 J</span>
                 </div>
-                <div class="analytics-grid">
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-energy-tot">0.00 J</span>
-                        <span class="stat-label">Total Energy ($E_T$)</span>
-                    </div>
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-energy-pot">0.00 J</span>
-                        <span class="stat-label">Potential Energy ($E_p$)</span>
-                    </div>
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-momentum-lin">0.00 N·s</span>
-                        <span class="stat-label">Linear Momentum ($|P|$)</span>
-                    </div>
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-momentum-ang">0.00 kg·m²/s</span>
-                        <span class="stat-label">Angular Momentum ($|H|$)</span>
-                    </div>
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-elevator">0.00°</span>
-                        <span class="stat-label">Elevator Command</span>
-                    </div>
-                    <div class="analytics-stat">
-                        <span class="stat-value" id="val-throttle">0.0%</span>
-                        <span class="stat-label">Throttle Command</span>
-                    </div>
+                <div class="data-block">
+                    <span class="data-label">Potential Energy</span>
+                    <span class="data-value" id="val-energy-pot">0 J</span>
+                </div>
+                <div class="data-block">
+                    <span class="data-label">Linear Momentum</span>
+                    <span class="data-value" id="val-momentum-lin">0 N·s</span>
+                </div>
+                <div class="data-block">
+                    <span class="data-label">Angular Momentum</span>
+                    <span class="data-value" id="val-momentum-ang">0 kg·m²/s</span>
+                </div>
+                <div class="data-block border-left">
+                    <span class="data-label">Elevator</span>
+                    <span class="data-value text-blue" id="val-elevator">0°</span>
+                </div>
+                <div class="data-block">
+                    <span class="data-label">Throttle</span>
+                    <span class="data-value text-orange" id="val-throttle">0%</span>
+                </div>
+                <div class="data-block border-left">
+                    <span class="data-label text-orange">True GPS North</span>
+                    <span class="data-value" id="val-gps-true">0.0 m</span>
+                </div>
+                <div class="data-block">
+                    <span class="data-label text-blue">Noisy GPS North</span>
+                    <span class="data-value" id="val-gps-noisy">0.0 m</span>
                 </div>
             </div>
         </footer>
     </div>
-
+    
+    <!-- Coded by AriceN -->
     <!-- Main Logic Script -->
     <script src="visualizer.js"></script>
 </body>

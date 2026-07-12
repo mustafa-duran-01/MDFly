@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-b23a0b23c080df4d29ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mdfly",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly-Debug-d87fd84514a6f201c4c2.json",
+					"name" : "mdfly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly_example-Debug-51abb5144711dac0254d.json",
+					"name" : "mdfly_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly_scenario1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly_scenario1-Debug-88efdde2b1555a0108a7.json",
+					"name" : "mdfly_scenario1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly_scenario2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly_scenario2-Debug-190e0e097d35d1696bad.json",
+					"name" : "mdfly_scenario2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly_scenario3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly_scenario3-Debug-72708bd6141ac97fdc49.json",
+					"name" : "mdfly_scenario3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mdfly_scenario4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mdfly_scenario4-Debug-02fb0848fbcaa1b8c20e.json",
+					"name" : "mdfly_scenario4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ertugrulcakir/Desktop/MDFly/build",
+		"source" : "/Users/ertugrulcakir/Desktop/MDFly"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	}
+}

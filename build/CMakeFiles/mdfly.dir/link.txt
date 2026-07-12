@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmdfly.a CMakeFiles/mdfly.dir/src/variable.cpp.o CMakeFiles/mdfly.dir/src/attitude.cpp.o CMakeFiles/mdfly.dir/src/wind.cpp.o CMakeFiles/mdfly.dir/src/actuation.cpp.o CMakeFiles/mdfly.dir/src/simulator.cpp.o CMakeFiles/mdfly.dir/src/pid_controller.cpp.o CMakeFiles/mdfly.dir/src/motor_model.cpp.o CMakeFiles/mdfly.dir/src/camera_model.cpp.o CMakeFiles/mdfly.dir/src/mavlink_comm.cpp.o CMakeFiles/mdfly.dir/src/sensor_model.cpp.o
+/usr/bin/ranlib libmdfly.a
