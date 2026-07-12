@@ -251,7 +251,8 @@ int main() {
             json += "\"momentum_angular_magnitude\":" + std::to_string(follower.state["momentum_angular_magnitude"]->value) + ",";
             json += "\"elevator\":" + std::to_string(follower.state["elevator"]->value) + ",";
             json += "\"aileron\":" + std::to_string(follower.state["aileron"]->value) + ",";
-            json += "\"throttle\":" + std::to_string(follower.state["throttle"]->value);
+            json += "\"throttle\":" + std::to_string(follower.state["throttle"]->value) + ",";
+            json += "\"gps_pos_n_noisy\":" + std::to_string(follower.state["gps_pos_n_noisy"]->value);
 
             if (!follower.targets.empty()) {
                 auto& tgt = follower.targets[0];
